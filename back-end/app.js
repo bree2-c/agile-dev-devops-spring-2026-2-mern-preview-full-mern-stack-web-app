@@ -78,5 +78,21 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+// a route to handle fetching About Us page data
+console.log("🔥 LOADED app.js that contains /about route")
+app.get('/about', (req, res) => {
+  res.json({
+    name: 'Bree',
+    photo: '/images/bree.jpg',
+    paragraphs: [
+      "Hi, I'm Bree! I'm a passionate full-stack developer with a love for building intuitive and responsive web applications.",
+      "I'm currently studying Computer Science and Computer Engineering and exploring the exciting world of agile development.",
+      "Outside of coding, I love hiking,playing racquet games such as badminton and table tennis, and contributing to open-source projects. I believe technology should be accessible and empowering for everyone, and I strive to build software that reflects those values.",
+    ],
+    status: 'all good',
+    
+  })
+})
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!

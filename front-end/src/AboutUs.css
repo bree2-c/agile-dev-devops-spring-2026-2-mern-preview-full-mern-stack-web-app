@@ -1,0 +1,51 @@
+.AboutUs {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.AboutUs h1 {
+  margin-bottom: 1.5rem;
+}
+
+.AboutUs-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.AboutUs-photo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #61dafb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.AboutUs-text {
+  text-align: left;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.AboutUs-text p {
+  margin-bottom: 1rem;
+}
+
+.AboutUs-error {
+  color: red;
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  .AboutUs-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .AboutUs-photo {
+    flex-shrink: 0;
+  }
+}
